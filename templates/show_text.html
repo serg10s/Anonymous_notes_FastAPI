@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show Result</title>
+</head>
+<body>
+    <form method="POST">
+        <label for="password_correct">Введите пароль </label>
+            <input type="password" name="password_correct" id="password_correct">
+        {% if password == password_correct%}
+            <p>Пользовательские данные: {{ data }}</p>
+        {% else %}
+            <p>Неверные данные</p>
+        {% endif %}
+    </form>
+    <p><a href="/">Главная страница</a></p>
+
+</body>
+</html>
